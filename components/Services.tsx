@@ -16,7 +16,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, icon, tar
       </p>
     </div>
     <div className="px-8 py-4 bg-stone-50 border-t border-stone-100">
-        <p className="text-sm font-medium text-terracotta-600">Affordable rates available</p>
+      <p className="text-sm font-medium text-terracotta-600">Affordable rates available</p>
     </div>
   </div>
 );
@@ -50,17 +50,18 @@ export const Services: React.FC = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-sage-50">
+    <section id="services" className="py-16 lg:py-24 bg-stone-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-serif font-bold text-stone-900 sm:text-4xl">
-            A Package for Every Journey
-          </h2>
-          <p className="mt-4 text-xl text-stone-600 max-w-2xl mx-auto">
+        <div className="text-center">
+          <h2 className="text-base text-terracotta-600 font-semibold tracking-wide uppercase">Services</h2>
+          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-stone-900 sm:text-4xl font-serif">
+            How I Can Help
+          </p>
+          <p className="mt-3 lg:mt-4 max-w-2xl text-lg lg:text-xl text-stone-600 mx-auto">
             Whether in-person in London or online, everything is customized. No generic PDFs, just real care.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="mt-12 lg:mt-16 grid gap-6 lg:gap-8 lg:grid-cols-3">
           {services.map((service, index) => (
             <ServiceCard key={index} {...service} />
           ))}

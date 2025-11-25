@@ -3,18 +3,18 @@ import enesImage from '../src/assets/meet-enes-gym.png';
 
 export const Philosophy: React.FC = () => {
   return (
-    <section id="meet-enes" className="py-24 bg-white overflow-hidden">
+    <section id="meet-enes" className="py-16 lg:py-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Bio Section */}
-        <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center mb-20">
-          <div className="relative mb-12 lg:mb-0 order-first lg:order-last">
+        <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center mb-12 lg:mb-20">
+          <div className="relative mb-8 lg:mb-0 order-first lg:order-last">
             <div className="absolute inset-0 bg-sage-100 rounded-3xl transform rotate-3 scale-105"></div>
             {/* Using a nature/fitness oriented image to match the 'farming/outdoor' vibe */}
             <img
               src={enesImage}
               alt="Enes - Holistic Trainer"
-              className="relative rounded-3xl shadow-xl w-full object-cover h-[600px] grayscale-0"
+              className="relative rounded-3xl shadow-xl w-full object-cover h-[350px] sm:h-[450px] lg:h-[600px] grayscale-0"
             />
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg border border-stone-100 max-w-xs hidden md:block">
               <p className="font-serif text-sage-800 italic text-lg">"Health is built like a garden—with care, consistency, and patience."</p>
@@ -53,7 +53,7 @@ export const Philosophy: React.FC = () => {
         </div>
 
         {/* Values Grid - Updated with new text points */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-10">
           <div className="bg-stone-50 rounded-xl p-8 hover:shadow-lg transition-all duration-300 group">
             <div className="h-14 w-14 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 text-sage-700 group-hover:bg-sage-600 group-hover:text-white transition-colors">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">

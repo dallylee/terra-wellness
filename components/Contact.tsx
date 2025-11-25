@@ -12,11 +12,11 @@ export const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="py-16 lg:py-20 bg-white">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div className="text-center mb-8 lg:mb-12">
           <h2 className="text-3xl font-serif font-bold text-stone-900">Let's Chat (Free)</h2>
-          <p className="mt-4 text-lg text-stone-600">
+          <p className="mt-3 lg:mt-4 text-base lg:text-lg text-stone-600">
             No pressure, no sales pitch. Just a conversation about where you are and where you want to be.
           </p>
         </div>
