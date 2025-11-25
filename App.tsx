@@ -4,7 +4,6 @@ import { Hero } from './components/Hero';
 import { Philosophy } from './components/Philosophy';
 import { Services } from './components/Services';
 import { Testimonials } from './components/Testimonials';
-import { AIWellnessCheck } from './components/AIWellnessCheck';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 
@@ -23,7 +22,6 @@ const App: React.FC = () => {
         <Philosophy />
         <Services />
         <Testimonials />
-        <AIWellnessCheck />
         <div ref={contactRef as React.RefObject<HTMLDivElement>}>
           <Contact />
         </div>

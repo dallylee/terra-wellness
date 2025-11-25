@@ -1,4 +1,5 @@
 import React from 'react';
+import enesImage from '../assets/meet-enes-gym.png';
 
 export const Philosophy: React.FC = () => {
   return (
@@ -11,7 +12,7 @@ export const Philosophy: React.FC = () => {
             <div className="absolute inset-0 bg-sage-100 rounded-3xl transform rotate-3 scale-105"></div>
             {/* Using a nature/fitness oriented image to match the 'farming/outdoor' vibe */}
             <img
-              src="/images/meet-enes-gym.png"
+              src={enesImage}
               alt="Enes - Holistic Trainer"
               className="relative rounded-3xl shadow-xl w-full object-cover h-[600px] grayscale-0"
             />
