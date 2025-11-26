@@ -8,9 +8,9 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
           {/* Column 1: Brand */}
           <div>
-            <h3 className="text-xl font-serif font-bold text-white mb-4">Terra Wellness</h3>
+            <h3 className="text-xl font-serif font-bold text-white mb-4">Enes Holistic Coaching</h3>
             <p className="text-sm leading-relaxed">
-              Helping you build a healthier, happier life through personalised fitness, nutrition, and mindset coaching with Enes.
+              Personalised fitness, nutrition and mindset coaching with Enes.
             </p>
           </div>
 
@@ -29,7 +29,7 @@ export const Footer: React.FC = () => {
           <div>
             <h4 className="text-base font-semibold text-white mb-4">Location</h4>
             <p className="text-sm leading-relaxed mb-4">
-              Based in London and Buckinghamshire, coaching clients online and in person.
+              Based in London & Buckinghamshire. Coaching clients online everywhere.
             </p>
             {/* Social Icons - Placeholder */}
             <div className="flex gap-4">
@@ -50,7 +50,7 @@ export const Footer: React.FC = () => {
         {/* Copyright Line */}
         <div className="mt-12 pt-8 border-t border-stone-800 text-center">
           <p className="text-sm text-stone-400">
-            © 2025 Terra Wellness. All rights reserved.
+            © 2025 Enes Holistic Coaching. All rights reserved.
           </p>
         </div>
       </div>

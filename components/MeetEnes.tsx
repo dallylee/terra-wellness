@@ -11,38 +11,39 @@ export const MeetEnes: React.FC = () => {
                         <div className="absolute inset-0 bg-sage-100 rounded-3xl transform -rotate-3 scale-105"></div>
                         <img
                             src={enesImage}
-                            alt="Enes, Terra Wellness coach, smiling in a gym setting"
+                            alt="Enes, your holistic coach, in a gym setting"
                             className="relative rounded-3xl shadow-xl w-full object-cover h-[350px] sm:h-[450px] lg:h-[550px]"
                         />
                     </div>
 
                     {/* Text Content - Right Side */}
                     <div>
-                        <p className="text-xs sm:text-sm text-terracotta-600 font-semibold tracking-wide uppercase mb-2">
-                            Meet Enes
-                        </p>
-                        <h2 className="text-3xl sm:text-4xl lg:text-[36px] font-semibold text-stone-900 mb-6 font-serif">
-                            A grounded coach with roots in hard work.
+                        <h2 className="text-3xl sm:text-4xl lg:text-[36px] font-semibold text-stone-900 mb-4 font-serif">
+                            Meet Your Coach
                         </h2>
+
+                        <h3 className="text-xl sm:text-2xl font-semibold text-stone-800 mb-6">
+                            A grounded, patient coach who understands real life.
+                        </h3>
 
                         <div className="space-y-4 text-stone-600 leading-relaxed">
                             <p>
-                                I am Enes, the coach behind Terra Wellness. My approach to fitness grew from the simple, hardworking traditions of Croatia, spending long days on the land and learning how movement, food, and routine shape the way we feel in our bodies.
+                                I am Enes, the coach behind this programme. My approach to fitness grew from my upbringing in Croatia, where long days working outdoors taught me that strength comes from consistency, routine and honest effort.
                             </p>
 
                             <p>
-                                For over 20 years, staying active has not just been a job for me, it has been a way of life. That experience taught me that real change is not about quick fixes, it is about consistency, patience, and building habits you can actually keep.
+                                For over 20 years, movement has been part of my daily life. My goal is to help you build habits you can actually maintain, whether you are nervous to start, rebuilding confidence or pushing for new fitness levels.
                             </p>
 
                             <p>
-                                Terra Wellness is my passion project. I work with people who feel nervous, stuck, or tired of one-size-fits-all plans. Whether you are a complete beginner, an elder wanting to stay steady on your feet, or a seasoned gym goer chasing bigger goals, I build a plan that respects where you are and where you want to go.
+                                This coaching is my passion project. I work with people who want to feel better in their bodies, whatever their age or starting point. If you want patient, personalised guidance without pressure or judgment, you are in the right place.
                             </p>
                         </div>
 
                         {/* Quote Box */}
                         <div className="mt-8 bg-sage-50 border-l-4 border-sage-600 p-6 rounded-r-xl">
                             <p className="font-serif text-lg italic text-sage-900">
-                                "Health is built like a garden: with care, consistency, and patience."
+                                "Health is built like a garden, with care, consistency and patience."
                             </p>
                         </div>
                     </div>

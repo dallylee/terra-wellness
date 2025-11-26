@@ -3,12 +3,12 @@ import React from 'react';
 export const IsThisForMe: React.FC = () => {
     const cards = [
         {
-            title: "New to exercise or starting over",
-            body: "For people who do not exercise at all, feel intimidated by the gym, or have never had a plan of their own.",
+            title: "If you are new to exercise",
+            body: "For people who have never worked out, feel nervous in gyms or do not know where to start.",
             bullets: [
-                "Safe, judgment-free start from your current level",
-                "Home or gym options with simple, clear instructions",
-                "Learn how to move without feeling watched or embarrassed"
+                "Safe, simple sessions at home or in the gym",
+                "Build confidence step by step",
+                "Learn without feeling watched or embarrassed"
             ],
             icon: (
                 <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -17,12 +17,26 @@ export const IsThisForMe: React.FC = () => {
             )
         },
         {
-            title: "Home workouts and low-impact stability",
-            body: "Ideal for middle-aged and older adults who prefer to train at home, want to feel steadier, and need exercises that respect their joints.",
+            title: "If you want strength without pressure",
+            body: "Support for women of all ages, including postpartum and perimenopause, who want sustainable strength and confidence.",
             bullets: [
-                "Gentle strength and balance work tailored to your abilities",
-                "Focus on core, stability, and everyday movements",
-                "Plans that fit around health conditions and injuries"
+                "Respectful, body-positive approach",
+                "Energy-friendly plans designed for real life",
+                "Support around confidence, stress and motivation"
+            ],
+            icon: (
+                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+            )
+        },
+        {
+            title: "If you prefer home workouts or gentle training",
+            body: "Ideal for middle-aged and older adults who want to improve balance, mobility and core strength at home.",
+            bullets: [
+                "Low-impact, joint-friendly movements",
+                "Focus on daily stability and strength",
+                "Tailored around your health conditions or injuries"
             ],
             icon: (
                 <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -31,30 +45,16 @@ export const IsThisForMe: React.FC = () => {
             )
         },
         {
-            title: "Gym members who are stuck",
-            body: "For younger and experienced gym goers who work hard but are not seeing the progress they expected.",
+            title: "If you go to the gym but see no results",
+            body: "For people who train regularly but feel stuck, plateaued or unsure how to progress.",
             bullets: [
-                "Form checks and technique fixes for key lifts",
-                "Progressive overload plans to break plateaus",
-                "Guidance for muscle gain, fat loss, or performance goals"
+                "Form correction and technique coaching",
+                "Progressive overload plans",
+                "Clear structure to reach new strength goals"
             ],
             icon: (
                 <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                </svg>
-            )
-        },
-        {
-            title: "Women who want strength without the noise",
-            body: "Support for women at every age, including postpartum and perimenopause, who want to feel stronger and more at home in their bodies.",
-            bullets: [
-                "Plans tailored to hormonal and physiological needs",
-                "Build strength without chasing unrealistic body ideals",
-                "Compassionate support around stress, body image, and energy"
-            ],
-            icon: (
-                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
             )
         }
@@ -65,14 +65,11 @@ export const IsThisForMe: React.FC = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Heading */}
                 <div className="text-center mb-12 lg:mb-16">
-                    <p className="text-xs sm:text-sm text-terracotta-600 font-semibold tracking-wide uppercase mb-2">
-                        Who I Help
-                    </p>
                     <h2 className="text-3xl sm:text-4xl lg:text-[36px] font-semibold text-stone-900 font-serif">
-                        Support for every stage of life and fitness.
+                        Who I Work With
                     </h2>
                     <p className="mt-4 lg:mt-6 max-w-3xl mx-auto text-base sm:text-lg text-stone-600 leading-relaxed">
-                        Terra Wellness is built for people who want to feel better in their bodies without feeling judged. Whether you have never exercised, feel lost in the gym, or want to move with confidence as you age, your plan is designed around your reality, not around a generic template.
+                        My coaching is designed for people who want to feel stronger, more confident and more capable, without feeling judged or overwhelmed. Whatever your age, confidence level or physical ability, your plan is built around you.
                     </p>
                 </div>
 

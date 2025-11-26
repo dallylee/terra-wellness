@@ -19,17 +19,22 @@ export const Hero: React.FC<HeroProps> = ({ onContactClick }) => {
             {/* Top Badge */}
             <div className="inline-flex items-center px-3 py-1.5 rounded-full bg-sage-100 text-sage-800 text-xs sm:text-sm font-medium mb-4 lg:mb-6 uppercase tracking-wide">
               <span className="flex h-2 w-2 rounded-full bg-sage-600 mr-2"></span>
-              London based & Online Coaching
+              London-based & Online Coaching
             </div>
 
             {/* H1 */}
             <h1 className="text-4xl sm:text-5xl lg:text-[52px] font-bold text-stone-900 leading-tight font-serif">
-              Personal training and holistic coaching for real people.
+              Your Body. Your Life. Your Pace.
             </h1>
 
             {/* Subheading */}
-            <p className="mt-4 lg:mt-6 text-base sm:text-lg text-stone-600 leading-relaxed max-w-2xl">
-              At Terra Wellness, Enes helps busy professionals, beginners, older adults, and everyday people build realistic habits for strength, mobility, and peace of mind. No group classes, no intimidation, just one-to-one guidance shaped around your life.
+            <p className="mt-4 lg:mt-6 text-lg sm:text-xl text-stone-700 leading-relaxed max-w-2xl font-medium">
+              Your personalised fitness, nutrition and mindfulness programme, designed to fit your real life.
+            </p>
+
+            {/* Main Paragraph */}
+            <p className="mt-4 text-base sm:text-lg text-stone-600 leading-relaxed max-w-2xl">
+              I'm Enes, and I work with people who feel intimidated by gyms, are managing injuries, have demanding schedules or are training later in life. You get one-to-one support shaped entirely around your real circumstances, not a modified template.
             </p>
 
             {/* CTAs */}
@@ -41,14 +46,9 @@ export const Hero: React.FC<HeroProps> = ({ onContactClick }) => {
                 onClick={scrollToHowItWorks}
                 className="inline-flex items-center justify-center px-6 py-3 border-2 border-sage-600 text-base sm:text-lg font-semibold rounded-full text-sage-700 bg-transparent hover:bg-sage-50 transition-all duration-300"
               >
-                See How It Works
+                How My Coaching Works
               </button>
             </div>
-
-            {/* Helper Text */}
-            <p className="mt-3 text-xs sm:text-sm text-stone-500">
-              No pressure, no sales pitch.
-            </p>
           </div>
 
           {/* Image - Right Side */}
@@ -56,7 +56,7 @@ export const Hero: React.FC<HeroProps> = ({ onContactClick }) => {
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
               <img
                 src="/images/hero-coaching.jpg"
-                alt="Enes coaching a client in the gym with calm, focused support"
+                alt="Enes coaching a client with personalised support"
                 className="w-full h-[350px] sm:h-[450px] lg:h-[550px] object-cover"
               />
             </div>

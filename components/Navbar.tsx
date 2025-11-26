@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
-import logoImage from '../src/assets/logo.png';
+import logoImage from '../src/assets/enes-logo.png';
 
 interface NavbarProps {
   onContactClick: () => void;
@@ -23,9 +23,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onContactClick }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-3">
-            <img src={logoImage} alt="Terra Wellness Logo" className="h-12 w-auto" />
+            <img src={logoImage} alt="Enes Holistic Coaching" className="h-12 w-auto" />
             <span className={`text-xl font-serif font-bold tracking-tight ${isScrolled ? 'text-sage-900' : 'text-sage-900'}`}>
-              Terra Wellness
+              Enes Holistic Coaching
             </span>
           </div>
 

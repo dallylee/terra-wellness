@@ -5,38 +5,38 @@ export const PlansAndPricing: React.FC = () => {
         {
             title: "Personal Wellness Set-Up",
             price: "£149 one-off",
-            description: "A complete, personalised starting blueprint designed just for you.",
+            description: "A personalised 8–12 week plan created entirely around you.",
             features: [
-                "Free consultation call, 20–30 minutes",
-                "Detailed questionnaire and full review by Enes",
-                "8–12 week personalised workout plan in your portal",
-                "Nutrition guidance and calorie or portion tools",
-                "Mindfulness and mindset exercises tailored to your challenges",
-                "One follow-up check-in call during your first month"
+                "Free consultation call",
+                "Detailed questionnaire & full review",
+                "Custom workout plan in your dashboard",
+                "Nutrition guidance & calorie/portion tools",
+                "Mindfulness and mindset exercises",
+                "Follow-up call in the first month"
             ],
             isPopular: false
         },
         {
             title: "Coaching Membership Lite",
             price: "£69 per month",
-            description: "Stay accountable with monthly check-ins and plan updates.",
+            description: "Monthly accountability and plan updates.",
             features: [
-                "Ongoing access to your Terra Wellness portal",
-                "Monthly plan refresh based on your progress",
-                "One 30-minute online check-in per month",
-                "Message support inside the portal, replies within 48 hours on weekdays"
+                "Access to your personal dashboard",
+                "Monthly plan refresh",
+                "One 30-min check-in each month",
+                "Message support (reply within 48 hours)"
             ],
             isPopular: true
         },
         {
             title: "Coaching Membership Plus",
             price: "£109 per month",
-            description: "Closer support for bigger goals and more frequent feedback.",
+            description: "Weekly feedback and closer support for bigger goals.",
             features: [
-                "Everything in Coaching Membership Lite",
-                "Weekly written check-ins with feedback from Enes",
-                "One additional 15-minute call each month for when you hit a wall",
-                "Priority replies to portal messages within 24 hours on weekdays"
+                "Everything in Lite",
+                "Weekly written check-ins",
+                "Additional 15-min call each month",
+                "Priority message replies within 24 hours"
             ],
             isPopular: false
         }
@@ -46,15 +46,15 @@ export const PlansAndPricing: React.FC = () => {
         <section id="plans-pricing" className="py-16 lg:py-20 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Heading */}
-                <div className="text-center mb-12 lg:mb-16">
-                    <p className="text-xs sm:text-sm text-terracotta-600 font-semibold tracking-wide uppercase mb-2">
-                        Plans and Pricing
-                    </p>
+                <div className="text-center mb-8 lg:mb-12">
                     <h2 className="text-3xl sm:text-4xl lg:text-[36px] font-semibold text-stone-900 font-serif">
-                        Choose the level of support that suits you.
+                        Plans & Pricing
                     </h2>
                     <p className="mt-4 lg:mt-6 max-w-3xl mx-auto text-base sm:text-lg text-stone-600 leading-relaxed">
-                        Every plan starts with a free chat. Pricing is transparent so you know what you are committing to before you begin.
+                        Every journey starts with a free chat. Transparent pricing, no hidden fees.
+                    </p>
+                    <p className="mt-4 max-w-2xl mx-auto text-sm sm:text-base text-stone-600">
+                        <strong>How it works:</strong> Start with the Personal Wellness Set-Up (£149 one-off). This creates your custom plan. Then choose ongoing support that fits your needs.
                     </p>
                 </div>
 
@@ -63,13 +63,13 @@ export const PlansAndPricing: React.FC = () => {
                     {plans.map((plan, index) => (
                         <div
                             key={index}
-                            className={`relative bg-white rounded-2xl p-6 lg:p-8 shadow-sm hover:shadow-lg transition-all duration-300 border-2 ${plan.isPopular ? 'border-sage-600' : 'border-stone-200'
+                            className={`relative bg-white rounded-2xl p-6 lg:p-8 shadow-sm hover:shadow-lg transition-all duration-300 border-2 ${plan.isPopular ? 'border-sage-600 transform scale-105' : 'border-stone-200'
                                 }`}
                         >
                             {/* Popular Badge */}
                             {plan.isPopular && (
                                 <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                                    <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-sage-600 text-white">
+                                    <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-sage-600 text-white uppercase tracking-wide">
                                         Most Popular
                                     </span>
                                 </div>
@@ -108,13 +108,13 @@ export const PlansAndPricing: React.FC = () => {
                 {/* In-Person Sessions Block */}
                 <div className="bg-stone-50 rounded-2xl p-6 lg:p-8 border border-stone-200">
                     <h3 className="text-xl sm:text-2xl font-semibold text-stone-900 mb-3 font-serif">
-                        In-person sessions in Buckinghamshire
+                        In-person training (Buckinghamshire)
                     </h3>
                     <p className="text-stone-600 leading-relaxed mb-4">
-                        For clients in Buckinghamshire, Enes offers a limited number of in-person personal training sessions, subject to availability. These can be combined with online coaching or booked separately.
+                        60-minute sessions available locally, subject to availability.
                     </p>
                     <p className="text-lg font-semibold text-sage-700">
-                        From £45 per 60-minute session. Block bookings available for better value.
+                        From £45 per session. Block bookings available.
                     </p>
                 </div>
             </div>

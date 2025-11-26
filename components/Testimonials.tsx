@@ -42,19 +42,19 @@ export const Testimonials: React.FC = () => {
   const testimonials: TestimonialProps[] = [
     {
       name: "Sarah K.",
-      role: "Marketing Manager",
-      quote: "I finally found a plan that fits my impossible schedule. Before finding Enes, I thought having a demanding London job meant I simply had 'no time' to exercise. Generic workout plans felt overwhelming and quickly failed. Enes completely changed that. He didn't just give me a plan; he custom-built it around my impossible schedule and preference for home workouts. It's not 'out of the bag'—it's tailor-made. I'm finally seeing real results, and I actually feel less stressed. It's truly a personalised, affordable solution that fits my real life.",
+      role: "42, London – mother of two, desk job",
+      quote: "A plan that finally fits my impossible schedule. Before finding Enes, I thought having a demanding London job meant I simply had 'no time' to exercise. Generic workout plans felt overwhelming and quickly failed. Enes completely changed that. He didn't just give me a plan; he custom-built it around my impossible schedule and preference for home workouts. It's not 'out of the bag'—it's tailor-made. I'm finally seeing real results, and I actually feel less stressed. It's truly a personalised, affordable solution that fits my real life.",
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&h=200"
     },
     {
       name: "Mark B.",
-      role: "Financial Analyst",
-      quote: "After a year of no progress, I started hitting new personal bests. I was going to the gym 4-5 times a week for a year but was constantly frustrated because I wasn't seeing any changes. I needed a professional to take my journey to the 'next step.' Enes identified the missing pieces in my form, nutrition, and recovery almost immediately. His plan was tough, but every session felt purpose-driven and specific to my goals. The progress tracking is amazing, and I'm hitting PBs I never thought possible. A brilliant, affordable investment.",
+      role: "35, Buckinghamshire – gym regular, wanted to break a plateau",
+      quote: "After a year of no change, I started hitting new PBs. I was going to the gym 4-5 times a week for a year but was constantly frustrated because I wasn't seeing any changes. I needed a professional to take my journey to the 'next step.' Enes identified the missing pieces in my form, nutrition, and recovery almost immediately. His plan was tough, but every session felt purpose-driven and specific to my goals. The progress tracking is amazing, and I'm hitting PBs I never thought possible. A brilliant, affordable investment.",
       image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&h=200"
     },
     {
       name: "Jessica T.",
-      role: "Teacher",
+      role: "28, online client – complete beginner with gym anxiety",
       quote: "I went from terrified of gyms to feeling stronger and happier. I had never stepped foot in a gym and the whole process seemed terrifying. I needed support, not just an instruction manual. Enes offers a truly holistic approach to well-being. We started slow, focusing on core strength and mindfulness alongside my workouts. He's incredibly patient, non-judgmental, and genuinely passionate about my development. I've not only lost weight, but I feel stronger, more confident, and happier. This is the full package of support I needed.",
       image: "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=200&h=200"
     }
@@ -64,14 +64,11 @@ export const Testimonials: React.FC = () => {
     <section id="client-stories" className="py-16 lg:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <p className="text-xs sm:text-sm text-terracotta-600 font-semibold tracking-wide uppercase mb-2">
-            Client Stories
-          </p>
           <h2 className="text-3xl sm:text-4xl lg:text-[36px] font-semibold text-stone-900 font-serif">
-            Real people, real progress.
+            Client Stories
           </h2>
           <p className="mt-4 lg:mt-6 max-w-3xl mx-auto text-base sm:text-lg text-stone-600 leading-relaxed">
-            Here is what clients say about working with Terra Wellness. Names and stories are shared with permission.
+            Here is what clients say about working with me. Names and stories are shared with permission.
           </p>
         </div>
         <div className="mt-12 lg:mt-16 grid gap-6 lg:gap-8 lg:grid-cols-3">
