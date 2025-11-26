@@ -1,12 +1,18 @@
 import { GoogleGenAI } from "@google/genai";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
+const ai = apiKey ? new GoogleGenAI({ apiKey }) : null;
 
 export const getPersonalizedTip = async (goal: string, lifestyle: string): Promise<string> => {
   try {
+    if (!ai) {
+      console.warn("Gemini API key is not configured; returning fallback tip.");
+      return "Every small step counts towards a healthier you. I'd love to discuss this more in person! - Enes";
+    }
+
     const model = 'gemini-2.5-flash';
     const prompt = `
-      You are Enes, a warm, empathetic, and holistic personal trainer. 
+      You are Enes, a warm, empathetic, and holistic personal trainer.
       A user has visited your website. They have the following goal: "${goal}" and describe their lifestyle as: "${lifestyle}".
       
       Provide a single, short (max 2 sentences), encouraging, and specific health or mindset tip for them. 
@@ -28,6 +34,11 @@ export const getPersonalizedTip = async (goal: string, lifestyle: string): Promi
 
 export const generateEnesGymImage = async (base64Image: string): Promise<string | null> => {
   try {
+    if (!ai) {
+      console.warn("Gemini API key is not configured; skipping image generation.");
+      return null;
+    }
+
     const response = await ai.models.generateContent({
       model: 'gemini-2.5-flash-image',
       contents: {
