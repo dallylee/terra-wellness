@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { IsThisForMe } from './components/IsThisForMe';
@@ -11,10 +11,8 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 
 function App() {
-  const contactRef = useRef<HTMLDivElement>(null);
-
   const scrollToContact = () => {
-    contactRef.current?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('free-chat')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -27,9 +25,7 @@ function App() {
       <MeetEnes />
       <PlansAndPricing />
       <Testimonials />
-      <div ref={contactRef as React.RefObject<HTMLDivElement>}>
-        <Contact />
-      </div>
+      <Contact />
       <Footer />
     </div>
   );
