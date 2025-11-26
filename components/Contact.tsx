@@ -33,7 +33,7 @@ export const Contact: React.FC = () => {
             <button onClick={() => setIsSubmitted(false)} className="mt-6 text-sm font-medium text-sage-600 hover:text-sage-500 underline">Send another message</button>
           </div>
         ) : (
-          <form action="https://formspree.io/f/enes.custic@gmail.com" method="POST" className="space-y-6 bg-white p-6 lg:p-8 rounded-2xl shadow-lg border border-stone-100">
+          <form action="https://formspree.io/f/enes.custic2404@gmail.com" method="POST" className="space-y-6 bg-white p-6 lg:p-8 rounded-2xl shadow-lg border border-stone-100">
             {/* Name */}
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-stone-700 mb-1">Name *</label>
