@@ -2,22 +2,24 @@ import React, { useState } from 'react';
 import { Button } from './Button';
 
 export const Contact: React.FC = () => {
-  const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+  const [formState, setFormState] = useState({
+    name: '',
+    email: '',
+    preference: '',
+    message: ''
+  });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Simulate submission
-    setTimeout(() => setIsSubmitted(true), 1000);
-  };
-
   return (
-    <section id="contact" className="py-16 lg:py-20 bg-white">
+    <section id="free-chat" className="py-16 lg:py-20 bg-stone-50">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Heading */}
         <div className="text-center mb-8 lg:mb-12">
-          <h2 className="text-3xl font-serif font-bold text-stone-900">Let's Chat (Free)</h2>
-          <p className="mt-3 lg:mt-4 text-base lg:text-lg text-stone-600">
-            No pressure, no sales pitch. Just a conversation about where you are and where you want to be.
+          <h2 className="text-3xl sm:text-4xl lg:text-[36px] font-semibold text-stone-900 font-serif">
+            Let us talk about where you want to go.
+          </h2>
+          <p className="mt-4 lg:mt-6 text-base sm:text-lg text-stone-600 leading-relaxed">
+            Use this form to request your free consultation with Enes. No obligation, just a conversation about your health, habits, and hopes.
           </p>
         </div>
 
@@ -27,50 +29,80 @@ export const Contact: React.FC = () => {
               <svg className="h-6 w-6 text-sage-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
             </div>
             <h3 className="text-lg font-medium text-sage-900">Message received!</h3>
-            <p className="mt-2 text-stone-600">Thanks for reaching out. I'll get back to you personally within 24 hours.</p>
+            <p className="mt-2 text-stone-600">Enes reads every message and will reply as soon as possible with next steps.</p>
             <button onClick={() => setIsSubmitted(false)} className="mt-6 text-sm font-medium text-sage-600 hover:text-sage-500 underline">Send another message</button>
           </div>
         ) : (
-          <form action="https://formspree.io/f/enes.custic@gmail.com" method="POST" className="space-y-6 bg-white p-8 rounded-2xl shadow-lg border border-stone-100">
+          <form action="https://formspree.io/f/enes.custic@gmail.com" method="POST" className="space-y-6 bg-white p-6 lg:p-8 rounded-2xl shadow-lg border border-stone-100">
+            {/* Name */}
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-stone-700">Name</label>
+              <label htmlFor="name" className="block text-sm font-medium text-stone-700 mb-1">Name *</label>
               <input
                 type="text"
                 id="name"
                 name="name"
                 required
-                className="mt-1 block w-full px-4 py-3 rounded-lg border border-stone-300 shadow-sm focus:border-sage-500 focus:ring-sage-500"
+                className="block w-full px-4 py-3 rounded-lg border border-stone-300 shadow-sm focus:border-sage-500 focus:ring-sage-500"
                 value={formState.name}
                 onChange={e => setFormState({ ...formState, name: e.target.value })}
               />
             </div>
+
+            {/* Email */}
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-stone-700">Email</label>
+              <label htmlFor="email" className="block text-sm font-medium text-stone-700 mb-1">Email *</label>
               <input
                 type="email"
                 id="email"
                 name="email"
                 required
-                className="mt-1 block w-full px-4 py-3 rounded-lg border border-stone-300 shadow-sm focus:border-sage-500 focus:ring-sage-500"
+                className="block w-full px-4 py-3 rounded-lg border border-stone-300 shadow-sm focus:border-sage-500 focus:ring-sage-500"
                 value={formState.email}
                 onChange={e => setFormState({ ...formState, email: e.target.value })}
               />
             </div>
+
+            {/* Preference Dropdown */}
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-stone-700">What's on your mind?</label>
+              <label htmlFor="preference" className="block text-sm font-medium text-stone-700 mb-1">How do you prefer to train?</label>
+              <select
+                id="preference"
+                name="preference"
+                className="block w-full px-4 py-3 rounded-lg border border-stone-300 shadow-sm focus:border-sage-500 focus:ring-sage-500"
+                value={formState.preference}
+                onChange={e => setFormState({ ...formState, preference: e.target.value })}
+              >
+                <option value="">Select an option</option>
+                <option value="at-home">At home</option>
+                <option value="in-gym">In the gym</option>
+                <option value="mix">A mix of both</option>
+                <option value="not-sure">Not sure yet</option>
+              </select>
+            </div>
+
+            {/* Message */}
+            <div>
+              <label htmlFor="message" className="block text-sm font-medium text-stone-700 mb-1">What's on your mind?</label>
               <textarea
                 id="message"
                 name="message"
                 rows={4}
-                className="mt-1 block w-full px-4 py-3 rounded-lg border border-stone-300 shadow-sm focus:border-sage-500 focus:ring-sage-500"
-                placeholder="e.g. I want to start gym but I'm nervous..."
+                className="block w-full px-4 py-3 rounded-lg border border-stone-300 shadow-sm focus:border-sage-500 focus:ring-sage-500"
+                placeholder="For example: I want to feel stronger but I am nervous about starting, I have an old injury, I feel stuck at the gym..."
                 value={formState.message}
                 onChange={e => setFormState({ ...formState, message: e.target.value })}
               ></textarea>
             </div>
-            <Button type="submit" className="w-full">
+
+            {/* Submit Button */}
+            <Button type="submit" className="w-full text-base sm:text-lg font-semibold">
               Request Free Consultation
             </Button>
+
+            {/* Helper Text */}
+            <p className="text-xs sm:text-sm text-stone-500 text-center">
+              Enes reads every message and will reply as soon as possible with next steps.
+            </p>
           </form>
         )}
       </div>

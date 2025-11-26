@@ -1,34 +1,38 @@
 import React, { useRef } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
-import { Philosophy } from './components/Philosophy';
-import { Services } from './components/Services';
+import { IsThisForMe } from './components/IsThisForMe';
+import { HowItWorks } from './components/HowItWorks';
+import { WhyTerra } from './components/WhyTerra';
+import { MeetEnes } from './components/MeetEnes';
+import { PlansAndPricing } from './components/PlansAndPricing';
 import { Testimonials } from './components/Testimonials';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 
-const App: React.FC = () => {
-  const contactRef = useRef<HTMLElement>(null);
+function App() {
+  const contactRef = useRef<HTMLDivElement>(null);
 
   const scrollToContact = () => {
     contactRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen bg-white">
       <Navbar onContactClick={scrollToContact} />
-      <main className="flex-grow">
-        <Hero onContactClick={scrollToContact} />
-        <Philosophy />
-        <Services />
-        <Testimonials />
-        <div ref={contactRef as React.RefObject<HTMLDivElement>}>
-          <Contact />
-        </div>
-      </main>
+      <Hero onContactClick={scrollToContact} />
+      <IsThisForMe />
+      <HowItWorks />
+      <WhyTerra />
+      <MeetEnes />
+      <PlansAndPricing />
+      <Testimonials />
+      <div ref={contactRef as React.RefObject<HTMLDivElement>}>
+        <Contact />
+      </div>
       <Footer />
     </div>
   );
-};
+}
 
 export default App;
