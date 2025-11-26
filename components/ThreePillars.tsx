@@ -10,7 +10,7 @@ export const ThreePillars: React.FC = () => {
                 "Modifications for pain, injuries and health conditions",
                 "Clear guidance on form, intensity and when to stop"
             ],
-            shadowColor: "shadow-stone-300"
+            shadowColor: "shadow-orange-200"
         },
         {
             title: "Nutrition",
